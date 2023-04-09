@@ -1,0 +1,9 @@
+<input type="text" #productName placeholder="enter product name">
+
+<input type="text" #productPrice placeholder="enter product price">
+
+<input type="text" #productCategory placeholder="enter product product-category">
+<input type="text" #productDescription placeholder="enter product description">
+<input type="text" #imgLink placeholder="put the image url here">
+
+<button (click)="addNewProduct(productName.value,productPrice.value,productCategory.value,productDescription.value, imgLink.value)">Submit</button>

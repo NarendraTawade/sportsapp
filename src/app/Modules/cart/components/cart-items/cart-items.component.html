@@ -1,0 +1,26 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-10">
+            <div class="row">
+
+                <div class="col-md-3 card m-4" *ngFor="let cartItem of cart ,let i = index" style="width: 18rem;">
+                    <img src={{cartItem.imgSrc}} class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h6 class="card-title">{{cartItem.productName}}</h6>
+                        <p class="card-text">{{cartItem.productPrice}}</p>
+                        <button class="btn btn-primary" (click)="removeFromCart(i,cartItem);">Remove From Cart</button>
+                        <!-- <a class="btn btn-primary" routerLink="/dashboard/view-details">View Product Details</a> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-2 mt-5">
+            <app-place-order [totalCost]="TotalCartCost"></app-place-order>
+        </div>
+    </div>
+
+    <router-outlet></router-outlet>
+
+
+</div>

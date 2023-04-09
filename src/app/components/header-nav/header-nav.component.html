@@ -1,0 +1,20 @@
+<nav class="navbar">
+  <!-- LOGO -->
+  <div class="logo" routerLink="/dashboard">SporDDiction</div>
+  <!-- NAVIGATION MENU -->
+  <ul class="nav-links">
+    <!-- USING CHECKBOX HACK -->
+    <input type="checkbox" id="checkbox_toggle" />
+    <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+    <!-- NAVIGATION MENUS -->
+    <div class="menu">
+      <li><a routerLink="/dashboard" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact:
+          true}">Dashboard</a></li>
+      <li><a routerLink="/add-product" routerLinkActive="active-link" 5>Add Product</a></li>
+      <li><a routerLink="/dashboard" fragment='sale'>Sale</a></li>
+      <li><a routerLink="/dashboard" fragment="latest-trends">Latest Trends</a></li>
+      <li><a routerLink="/cart" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact:
+          true}">Cart <sup>{{count}}</sup></a></li>
+    </div>
+  </ul>
+</nav>

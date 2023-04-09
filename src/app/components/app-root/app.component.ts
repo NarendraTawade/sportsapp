@@ -7,4 +7,14 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'sports-ecommerce';
+
+  // value: any = ''
+
+  // myName(e:any){
+  //   this.value =e.target.value;
+  // }
+
+  // update(){
+  //   this.value='narendratawade@gmail.com'
+  // }
 }
